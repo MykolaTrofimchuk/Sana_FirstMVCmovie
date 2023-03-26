@@ -1,0 +1,15 @@
+﻿@{
+	ViewData["Title"] = "Hello!";
+}
+<h2>Input your name</h2>
+@using (Html.BeginForm("Welcome", "HelloWorld", FormMethod.Post))
+{
+	<div>
+		<div>@Html.TextBox("Username")</div>
+	</div>
+
+	<div>
+		<button type="submit">Go!</button>
+	</div>
+}
+
